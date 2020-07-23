@@ -16,7 +16,7 @@ public class FindMinimumSortedArray {
 
         while (left < right) {
             int midPoint = left + (right - left) / 2;
-            if (nums[midPoint] > 0 && nums[midPoint] < nums[midPoint - 1]) {
+            if (midPoint > 0 && nums[midPoint] < nums[midPoint - 1]) {
                 return nums[midPoint];
             } else if (nums[left] <= nums[midPoint] && nums[midPoint] > nums[right]) {
                 left = midPoint + 1;
