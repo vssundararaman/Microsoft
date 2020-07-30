@@ -8,6 +8,9 @@ public class ReverseWords {
     public static void main(String[] args) {
         String input = "the sky is blue";
         System.out.print(reverseWords(input));
+
+
+
     }
 
     static String reverseWords(String str){
@@ -19,6 +22,33 @@ public class ReverseWords {
         String result = String.join(" ", wordList);
         return result;
     }
+
+    static  boolean isPalindrome(String s) {
+
+        StringBuilder sb = new StringBuilder();
+
+        for(char ch: s.toCharArray()){
+            if(Character.isLetterOrDigit(ch)){
+                sb.append(ch);
+            }
+        }
+
+        String filteredString = sb.toString();
+        String reverseString = sb.reverse().toString();
+
+        System.out.println(" ***** " + filteredString);
+        System.out.println(" ***** " + reverseString);
+
+        if(filteredString.equalsIgnoreCase(reverseString)){
+            return true;
+        }
+
+        return false;
+    }
+
+
+
+
 }
 
 

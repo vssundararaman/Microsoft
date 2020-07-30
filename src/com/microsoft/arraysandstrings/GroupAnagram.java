@@ -5,7 +5,8 @@ import java.util.*;
 public class GroupAnagram {
 
     public static void main(String[] args) {
-        String[] str = {"tab","eat", "tea", "tan", "ate", "nat", "bat"};
+       // String[] str = {"tab","eat", "tea", "tan", "ate", "nat", "bat"};
+        String[] str = {"bba","abb","cca","acc"};
         System.out.println(groupAnagrams1(str));
 
     }
@@ -21,6 +22,7 @@ public class GroupAnagram {
                 arr[str.charAt(i)-'a']++;
             }
 
+            System.out.println(arr);
             String ns = new String(arr);
 
             if(map.containsKey(ns)){
