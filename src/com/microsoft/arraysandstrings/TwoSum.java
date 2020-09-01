@@ -7,8 +7,8 @@ import java.util.Map;
 public class TwoSum {
 
     public static void main(String[] args) {
-        int nums[] = {3,2,4};
-        int target = 6;
+        int nums[] = {1, 1, 2, 45, 46, 46};
+        int target = 47;
 
         System.out.println(Arrays.toString(twoSumOnePassHash(nums, target)));
 
